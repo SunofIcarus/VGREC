@@ -17,7 +17,7 @@ params = {
 all_games = []
 
 # Fetch multiple pages (increase range as needed)
-for page in range(1, 6):  # 5 pages x 40 games = 200 games
+for page in range(1, 25):  # 5 pages x 40 games = 200 games
     params["page"] = page
     response = requests.get(RAWG_API_URL, params=params)
     if response.status_code != 200:

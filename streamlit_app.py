@@ -4,6 +4,9 @@ from app.recommender import get_recommendation
 from app.game_data import load_games
 import json
 
+
+
+
 with open("data/raw/genres.json") as f:
     genres = json.load(f)
 with open("data/raw/platforms.json") as f:
