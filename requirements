@@ -3,4 +3,4 @@ requests
 python-dotenv
 mistralai
 numby
-pydantic
+pydantic==1.10.13
