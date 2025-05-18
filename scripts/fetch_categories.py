@@ -1,11 +1,9 @@
 import requests
 import json
 from pathlib import Path
-from dotenv import load_dotenv
-import os
+import streamlit as st
 
-load_dotenv()
-API_KEY = os.getenv("RAWG_API_KEY")
+API_KEY = st.secrets["RAWG_API_KEY"]
 RAWG_API_URL = "https://api.rawg.io/api"
 
 def fetch_categories(endpoint):

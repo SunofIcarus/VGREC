@@ -1,15 +1,14 @@
 from app.user_profile import UserProfile
 from app.embedding_cache import load_embedding_cache, get_cached_embedding, update_embedding_cache
 from typing import List, Dict
-from dotenv import load_dotenv
 from mistralai import Mistral
 from numpy import dot
 from numpy.linalg import norm
-import os
 import time
+import streamlit as st
 
-load_dotenv()
-api_key = os.getenv("MISTRAL_API_KEY")
+api_key = st.secrets["MISTRAL_API_KEY"]
+
 
 client = Mistral(api_key=api_key)
 
