@@ -23,3 +23,5 @@ Thumbs.db
 # Data dumps
 data/raw/
 data/processed/
+
+.streamlit/secrets.toml
