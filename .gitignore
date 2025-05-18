@@ -21,7 +21,6 @@ Thumbs.db
 .vscode/
 
 # Data dumps
-data/raw/
 data/processed/
 
 .streamlit/secrets.toml
